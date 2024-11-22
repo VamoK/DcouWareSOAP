@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/docuware" xmlns:tns="http://www.example.org/docuware" elementFormDefault="qualified">
+	
+	<element name="getFileCabinetInfoRequest">
+		<complexType>
+			<sequence>
+				<element name="requestUrl" type="string" />
+				<element name="dwUsername" type="string" />
+				<element name="dwPassword" type="string" />
+				<element name="dwFileCabinetId" type="string" />
+				<element name="dwSearchDialogId" type="string" />
+				<element name="platform" type="string" />
+				<element name="requestBody" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="getFileCabinetInfoResponse">
+		<complexType>
+			<sequence>
+				<element name="xmlResponse" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>
